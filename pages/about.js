@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import initsStore from './../src/store'
 import Link from "next/link";
-import Layout from "./layout";
 
-class Index extends Component {
+class About extends Component {
     render() {
         return (
-            <Layout>
-                <Link href='/about'><a>about</a></Link>
-            </Layout>
+            <div>
+                <Link href='/'><a>return</a></Link>
+            </div>
         );
     }
 }
@@ -19,5 +17,5 @@ function mapStateToProps(state) {
 }
 
 export default connect(
-    initsStore,
-)(Index);
+    mapStateToProps,
+)(About);
