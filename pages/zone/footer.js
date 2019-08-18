@@ -7,9 +7,15 @@ class Footer extends Component {
             <div id='footer'>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-sm'>تست</div>
-                        <div className='col-sm'>تست</div>
-                        <div className='col-sm'>تست</div>
+                        <div className='col-sm'>
+                            <h5>با ما در ارتباط باشید</h5>
+                        </div>
+                        <div className='col-sm'>
+                            <h5>با ما در ارتباط باشید</h5>
+                        </div>
+                        <div className='col-sm'>
+                            <h5>با ما در ارتباط باشید</h5>
+                        </div>
                     </div>
                 </div>
             </div>

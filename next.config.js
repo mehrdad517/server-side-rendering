@@ -18,6 +18,13 @@ function HACK_removeMinimizeOptionFromCssLoaders(config) {
 module.exports = withCSS({
     webpack(config) {
         HACK_removeMinimizeOptionFromCssLoaders(config);
+        config.module.rules.push({
+            test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+            use: {
+                loader: 'url-loader',
+            }
+        });
+
         return config;
     },
 });

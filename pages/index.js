@@ -9,7 +9,10 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import {fetchAgency} from "../src/actions/agencyActions";
 import 'bootstrap-with-rtl/dist/css/bootstrap.min.css';
-import 'bootstrap-with-rtl/dist/css/bootstrap.rtl.min.css'
+import 'bootstrap-with-rtl/dist/css/bootstrap.rtl.min.css';
+import 'shabnam-font/dist/font-face.css';
+import './static/css/style.css';
+
 
 import Main from "./main";
 import About from './about'
