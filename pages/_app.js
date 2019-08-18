@@ -2,8 +2,7 @@ import React from 'react';
 import {Provider} from "react-redux";
 import App ,{Container} from 'next/app';
 import withRedux from 'next-redux-wrapper';
-import initsStore  from './../src/store'
-
+import store  from './../src/store'
 
 
 class Init extends App{
@@ -31,4 +30,4 @@ class Init extends App{
     }
 }
 
-export default withRedux(initsStore)(Init);
+export default withRedux(store)(Init);

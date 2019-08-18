@@ -1,21 +1,38 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {fetchAgency} from "../src/actions/agencyActions";
 import Link from "next/link";
 
 class Main extends Component {
+
+    componentDidMount() {
+        this.props.fetchData();
+    }
+
     render() {
         return (
             <div>
-                <Link href='/about'><a>about</a></Link>
             </div>
         );
     }
 }
 
 function mapStateToProps(state) {
-    return {};
+    return {
+        states: state.agencyReducer
+    };
+}
+
+
+function mapDispatchToProps(dispatch) {
+    return {
+        fetchData: function () {
+            dispatch(fetchAgency());
+        }
+    }
 }
 
 export default connect(
     mapStateToProps,
+    mapDispatchToProps
 )(Main);
