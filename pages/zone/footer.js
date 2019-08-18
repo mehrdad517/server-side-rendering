@@ -4,14 +4,12 @@ import {connect} from 'react-redux';
 class Footer extends Component {
     render() {
         return (
-            <div className='row'>
-                <div className='col-12'>
-                    <div className='container'>
-                        <div className='row'>
-                            <div className='col-4'>تست</div>
-                            <div className='col-4'>تست</div>
-                            <div className='col-4'>تست</div>
-                        </div>
+            <div id='footer'>
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-sm'>تست</div>
+                        <div className='col-sm'>تست</div>
+                        <div className='col-sm'>تست</div>
                     </div>
                 </div>
             </div>

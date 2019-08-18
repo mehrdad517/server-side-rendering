@@ -1,1 +1,1 @@
-export const FETCH_AGENCY = 'CHANGE_LOADING';
+export const FETCH_AGENCY = 'FETCH_AGENCY';
